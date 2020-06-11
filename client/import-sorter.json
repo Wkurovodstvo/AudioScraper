@@ -1,0 +1,62 @@
+{
+  "generalConfiguration": {
+    "sortOnBeforeSave": true
+  },
+  "importStringConfiguration": {
+    "trailingComma": "multiLine",
+    "tabSize": 2,
+    "maximumNumberOfImportExpressionsPerLine": {
+      "count": 120,
+      "type": "newLineEachExpressionAfterCountLimitExceptIfOnlyOne"
+    }
+  },
+  "sortConfiguration": {
+    "customOrderingRules": {
+      "defaultNumberOfEmptyLinesAfterGroup": 1,
+      "rules": [
+        {
+          "type": "path",
+          "disableSort": false,
+          "regex": "^react$",
+          "orderLevel": 5
+        },
+        {
+          "type": "path",
+          "disableSort": false,
+          "regex": "^[^@.]",
+          "orderLevel": 10
+        },
+        {
+          "type": "path",
+          "disableSort": false,
+          "regex": "ReactotronConfig",
+          "orderLevel": 19
+        },
+        {
+          "type": "path",
+          "disableSort": false,
+          "regex": "^@component|^@common|^@page|^@redux|^@style|^@util|^@webApi|^@/|^@translate",
+          "orderLevel": 20
+        },
+        {
+          "type": "path",
+          "disableSort": false,
+          "regex": "^[@]",
+          "orderLevel": 15
+        },
+        {
+          "type": "path",
+          "disableSort": false,
+          "regex": "[.]css",
+          "orderLevel": 60
+        },
+        {
+          "type": "path",
+          "disableSort": false,
+          "regex": "^[.]",
+          "orderLevel": 30
+        }
+      ]
+    }
+  }
+}

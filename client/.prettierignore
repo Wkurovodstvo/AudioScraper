@@ -1,0 +1,37 @@
+# Build
+build/
+dist/
+packages/frontend/web/public
+
+## Coverage
+coverage/
+
+## Editor
+.editorconfig
+
+## Git
+.git
+.gitignore
+
+## Prettier
+.prettierignore
+.prettierrc
+
+# NPM
+package-lock.json
+
+## VSCode
+.vscode
+jsconfig.json
+
+## Yarn
+package.json
+yarn.lock
+
+## ALkMaps
+**/alkmaps/**/*
+
+## Custom TS Lint rules
+config/customTSLintRules
+
+pathConfig.json
