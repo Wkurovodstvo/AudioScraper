@@ -2,16 +2,14 @@ FROM node:14.4-alpine
 
 ARG NODE_ENV="development"
 
-RUN mkdir ./client
-
 WORKDIR /client
 
-COPY package*.json ./
-COPY yarn.lock ./
+COPY package.json /client/
+COPY yarn.lock /client/
 
 RUN yarn install --frozen-lockfile
 
-COPY . .
+COPY . /client/
 
 EXPOSE 5000
 

@@ -5,6 +5,10 @@ module.exports = {
   entry: './src/index.tsx',
   devServer: {
     port: 5000,
+    hot: true,
+    open: true,
+    compress: true,
+    host: '0.0.0.0',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
