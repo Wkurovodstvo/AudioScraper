@@ -12,6 +12,16 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js'],
+    alias: {
+      '@': __dirname + '/src',
+      '@components': __dirname + '/src/components',
+      '@page': __dirname + '/src/page',
+      '@redux': __dirname + '/src/redux',
+      '@util': __dirname + '/src/util',
+      '@webApi': __dirname + '/src/webApi',
+      '@style': __dirname + '/src/style',
+      '@router': __dirname + '/src/router',
+    },
   },
   output: {
     path: path.join(__dirname, 'build/dist'),

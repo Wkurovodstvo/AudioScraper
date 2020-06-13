@@ -1,31 +1,29 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
     "allowJs": true,
+    "target": "es6",
     "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "outDir": "build/dist",
     "jsx": "react",
+    "outDir": "build/dist",
     "baseUrl": "./",
     "paths": {
       "@/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
-      "@page/*": [ "./src/page/*" ],
-      "@redux/*": [ "./src/redux/*" ],
-      "@util/*": [ "./src/util/*" ],
-      "@webApi/*": [ "./src/webApi/*" ]
+      "@page/*": ["./src/page/*"],
+      "@redux/*": ["./src/redux/*"],
+      "@util/*": ["./src/util/*"],
+      "@webApi/*": ["./src/webApi/*"],
+      "@style/*": ["./src/style/*"],
+      "@router/*": ["./src/router/*"]
     }
   },
   "include": [
